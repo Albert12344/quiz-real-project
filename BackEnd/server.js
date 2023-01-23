@@ -1,6 +1,7 @@
 const express = require('express')  
 const MongoClient = require('mongodb').MongoClient
 const cors = require('cors')
+const dotenv = require('dotenv').config()
 
 const app = express()
 app.use(cors());
@@ -19,8 +20,8 @@ app.get('/quiz',(req, resp) => {
 })
 
 
-app.listen(8080, () => {
-    MongoClient.connect('mongodb+srv://Albert:I6XAA3jYJoYymyZH@quiz.ayhem9e.mongodb.net/test?authSource=Quiz&authMechanism=SCRAM-SHA-1', {useNewUrlParser: true}, (err, result) => {
+app.listen(process.env.PORT, () => {
+    MongoClient.connect(process.env.MONGODB_URI, {useNewUrlParser: true}, (err, result) => {
         if(err) throw err
         database = result.db('Quiz')
         console.log("connected")

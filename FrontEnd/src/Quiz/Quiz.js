@@ -17,10 +17,6 @@ const handleClick = option => () => {
     setScore(score + 1);
   }
 
-  if(options[count] === undefined) {
-    console.log("hello")
-  }
-
   if(count == posts.length - 1){
     setIsShown(current => !current)
     setIsShown1(current => !current)
@@ -46,6 +42,8 @@ useEffect(() => {
   })
 }, []);
 
+
+
 const question = posts.map(question => {
   return question.question
 })
@@ -64,7 +62,7 @@ const options = posts.map(options => {
         </div>  
         <div className='Option'>
             {!! posts.length && options[count].map(option => (
-                <button className='button' key={option} onClick={handleClick(option)}>{option}</button>
+              <button className='button' key={option} onClick={handleClick(option)}>{option}</button>
             ))}
         </div>
       </div>
@@ -72,7 +70,7 @@ const options = posts.map(options => {
     {isShown1 && (
       <div className='Score'>
         <h1 className='score' >Your Score is {score}</h1>
-        <button  className='button' onClick={handleClick1} >Reset</button>
+        <button  className='button' onClick={handleClick1}>Reset</button>
       </div>
     )}
     </div>

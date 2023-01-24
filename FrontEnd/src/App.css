@@ -7,6 +7,15 @@
     background-position: center center;
 }
 
+.Login {
+  height: 100vh;
+  width: 100vw;
+  background: url(https://www.berkshireperio.com/wp-content/uploads/2020/04/question-mark-background.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .Option {
     display: flex;
     height: 150px;
@@ -77,6 +86,143 @@
     width: 70vw;
     justify-content: end;
     align-items: center;
+}
+
+.Admin {
+  height: 100vh;
+  width: 100vw;
+  background: url(https://www.berkshireperio.com/wp-content/uploads/2020/04/question-mark-background.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.postDiv {
+  padding-top: 50px;
+  padding-left: 100px;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.postDiv input{
+  color: white
 
 }
-  
+
+.label {
+  color: white;
+  font-size: 20px;
+}
+
+.editDiv {
+  font-size: 20px;
+  height: 500px;
+  width: 421px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.updatebutton {
+  height: 50px;
+  width: 150px;
+  justify-content: space-around;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.updatebutton:disabled {
+pointer-events: none;
+}
+
+.updatebutton:hover {
+color: rgb(252, 252, 252);
+background-color: #000000;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+.updatebutton:active {
+box-shadow: none;
+transform: translateY(0);
+}
+
+.editanything {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.signup {
+  color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  height: 50px;
+  width: 150px;
+  justify-content: space-around;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.login:disabled {
+pointer-events: none;
+}
+
+.login:hover {
+color: rgb(0, 0, 0);
+background-color: #ffffff;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+.login:active {
+box-shadow: none;
+transform: translateY(0);
+}
